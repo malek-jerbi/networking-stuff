@@ -15,7 +15,6 @@ if __name__ == '__main__':
     s.sendto(query, ('8.8.8.8', 53))
     print('ok')
 
-    while True:
-        data, sender = s.recvfrom(4096)
-        print(data)
-        print(sender)
+    data, sender = s.recvfrom(4096)
+    print(data)
+    print(sender)
