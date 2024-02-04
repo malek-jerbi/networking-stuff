@@ -34,6 +34,6 @@ while True:
         conn.send(new_data)
         print("sent")
 
-upstream_sock.close()
-conn.close()
+    upstream_sock.close()
+    conn.close()
 s.close()
